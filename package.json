@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon bin/www",
-    "test": "jest"
+    "test": "jest",
+    "start": "node bin/www"
   },
   "keywords": [],
   "author": "",
