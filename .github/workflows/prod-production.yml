@@ -1,4 +1,4 @@
-name: Deploy to Railway Prod Env
+name: Deploy to Railway Prod Environment
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-      
+
       - name: Install packages
         run: npm install
 
