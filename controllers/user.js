@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const {JWT_SECRET_KEY} = process.env;
 
 module.exports = {
-    register: async (req, res, next) => {
+    register: async (req, res) => {
         try {
             const {name, email, password} = req.body;
 
@@ -33,7 +33,7 @@ module.exports = {
                 }
             });
         } catch (err) {
-            next(err);
+            throw err;
         }
     },
 
